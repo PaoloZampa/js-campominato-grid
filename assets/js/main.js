@@ -18,50 +18,28 @@ let squareNumber1 = 100
 let squareNumber2 = 81
 let squareNumber3 = 49
 
-//seleziono dropdown menu
-//const selectElement = document.querySelector('#game_mode')
-
-//seleziono opzioni drop down menu
-/* function getGameMode() {
-    for(let i = 0; i < selectElement.length; i++){
-        if(selectElement.options[i].value == hardMode){
-            selectElement.selectedIndex = i;
-            createSquare(squareNumber3);
-        } else if (selectElement.options[i].value == mediumMode){
-            selectElement.selectedIndex = i;
-            createSquare(squareNumber2);
-        } else {
-            selectElement.selectedIndex = i;
-            createSquare(squareNumber1);
-        } 
-    }
-    
-} */
-
-/* function selectGameMode() {
-    let selectMode = document.querySelector('#game_mode');
-    let output = selectMode.value;
-    document.querySelector('.square') = output;
-} */
 
 //funzione creare cartelle
-function createSquare(numb1) {
-    for (let i = 0; i < numb1; i++) {
+function createSquare() {
+    for (let i = 0; i < squareNumber1; i++) {
         const cell = `<div class="square w_10"></div>`;
         container.innerHTML += cell;
     }
 }
 
 //seleziono una square
-const suqareElement = document.querySelectorAll('.square')
+const squareElement = document.querySelectorAll('.square')
 
 //aggiungo funzione al click
-
-for (let i = 0; i < suqareElement.length; i++) {
-    const thisSquare = suqareElement[i];
-    thisSquare.addEventListener("click", function () {
-        thisCell.classList.toggle("bg_green")
+for (let i = 0; i < squareElement.length; i++) {
+    const thisSquare = squareElement[i];
+    thisSquare.addEventListener("click", function() {
+        thisSquare.classList.toggle("bg_green")
         console.log("Changed the color")
     })
 }
 
+/* const buttonPlay = document.querySelector('button')
+buttonPlay.addEventListener('click', createSquare ()) */
+/* 
+document.getElementById("myBtn").addEventListener("click", createSquare()); */

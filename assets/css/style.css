@@ -10,6 +10,7 @@
     width: 80%;
     max-width: 1200px;
     background-color: blueviolet;
+    margin: auto;
 }
 
 .square{
@@ -19,7 +20,7 @@
 }
 
 .bg_green{
-    background-color: greenyellow;
+    background-color: rgb(50, 47, 255);
 }
 
 .w_10{
