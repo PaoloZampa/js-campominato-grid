@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    background-color: blueviolet;
+}
+
+.square{
+    aspect-ratio: 1/1;
+    border: 1px solid white;
+}
+
+.w_10{
+    width: calc(100% / 10);
+}
+
+.w_9{
+    width: calc(100% / 9);
+}
+
+.w_7{
+    width: calc(100% / 7);
+}
