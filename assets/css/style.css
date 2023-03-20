@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     width: 80%;
     max-width: 1200px;
-    background-color: blueviolet;
     margin: auto;
 }
 
@@ -17,10 +16,11 @@
     aspect-ratio: 1/1;
     border: 1px solid white;
     background-color: aqua;
+    text-align: center;
 }
 
 .bg_green{
-    background-color: rgb(50, 47, 255);
+    background-color: rgb(15, 132, 52) !important;
 }
 
 .w_10{

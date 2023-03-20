@@ -20,22 +20,22 @@ let squareNumber3 = 49
 
 
 //funzione creare cartelle
-function createSquare() {
-    for (let i = 0; i < squareNumber1; i++) {
-        const cell = `<div class="square w_10"></div>`;
-        container.innerHTML += cell;
+function createSquare(number) {
+    for (let i = 0; i < number; i++) {
+        const square = `<div class="square w_10"></div>`;
+        container.innerHTML += square;
     }
 }
 
 //seleziono una square
-const squareElement = document.querySelectorAll('.square')
+const squareElement = document.querySelectorAll(".square");
 
 //aggiungo funzione al click
 for (let i = 0; i < squareElement.length; i++) {
     const thisSquare = squareElement[i];
-    thisSquare.addEventListener("click", function() {
-        thisSquare.classList.toggle("bg_green")
-        console.log("Changed the color")
+    thisSquare.addEventListener('click', function() {
+        thisSquare.classList.toggle(" .bg_green");
+        console.log("Changed the color");
     })
 }
 
